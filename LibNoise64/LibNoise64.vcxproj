@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{550D6251-8B32-4C08-B972-937C4CB8C725}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibNoise64</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basictypes.h" />
+    <ClInclude Include="exception.h" />
+    <ClInclude Include="interp.h" />
+    <ClInclude Include="latlon.h" />
+    <ClInclude Include="mathconsts.h" />
+    <ClInclude Include="misc.h" />
+    <ClInclude Include="model\cylinder.h" />
+    <ClInclude Include="model\line.h" />
+    <ClInclude Include="model\model.h" />
+    <ClInclude Include="model\plane.h" />
+    <ClInclude Include="model\sphere.h" />
+    <ClInclude Include="module\abs.h" />
+    <ClInclude Include="module\add.h" />
+    <ClInclude Include="module\billow.h" />
+    <ClInclude Include="module\blend.h" />
+    <ClInclude Include="module\cache.h" />
+    <ClInclude Include="module\checkerboard.h" />
+    <ClInclude Include="module\clamp.h" />
+    <ClInclude Include="module\const.h" />
+    <ClInclude Include="module\curve.h" />
+    <ClInclude Include="module\cylinders.h" />
+    <ClInclude Include="module\displace.h" />
+    <ClInclude Include="module\exponent.h" />
+    <ClInclude Include="module\invert.h" />
+    <ClInclude Include="module\max.h" />
+    <ClInclude Include="module\min.h" />
+    <ClInclude Include="module\module.h" />
+    <ClInclude Include="module\modulebase.h" />
+    <ClInclude Include="module\multiply.h" />
+    <ClInclude Include="module\perlin.h" />
+    <ClInclude Include="module\power.h" />
+    <ClInclude Include="module\ridgedmulti.h" />
+    <ClInclude Include="module\rotatepoint.h" />
+    <ClInclude Include="module\scalebias.h" />
+    <ClInclude Include="module\scalepoint.h" />
+    <ClInclude Include="module\select.h" />
+    <ClInclude Include="module\spheres.h" />
+    <ClInclude Include="module\terrace.h" />
+    <ClInclude Include="module\translatepoint.h" />
+    <ClInclude Include="module\turbulence.h" />
+    <ClInclude Include="module\voronoi.h" />
+    <ClInclude Include="noise.h" />
+    <ClInclude Include="noisegen.h" />
+    <ClInclude Include="vectortable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="latlon.cpp" />
+    <ClCompile Include="model\cylinder.cpp" />
+    <ClCompile Include="model\line.cpp" />
+    <ClCompile Include="model\plane.cpp" />
+    <ClCompile Include="model\sphere.cpp" />
+    <ClCompile Include="module\abs.cpp" />
+    <ClCompile Include="module\add.cpp" />
+    <ClCompile Include="module\billow.cpp" />
+    <ClCompile Include="module\blend.cpp" />
+    <ClCompile Include="module\cache.cpp" />
+    <ClCompile Include="module\checkerboard.cpp" />
+    <ClCompile Include="module\clamp.cpp" />
+    <ClCompile Include="module\const.cpp" />
+    <ClCompile Include="module\curve.cpp" />
+    <ClCompile Include="module\cylinders.cpp" />
+    <ClCompile Include="module\displace.cpp" />
+    <ClCompile Include="module\exponent.cpp" />
+    <ClCompile Include="module\invert.cpp" />
+    <ClCompile Include="module\max.cpp" />
+    <ClCompile Include="module\min.cpp" />
+    <ClCompile Include="module\modulebase.cpp" />
+    <ClCompile Include="module\multiply.cpp" />
+    <ClCompile Include="module\perlin.cpp" />
+    <ClCompile Include="module\power.cpp" />
+    <ClCompile Include="module\ridgedmulti.cpp" />
+    <ClCompile Include="module\rotatepoint.cpp" />
+    <ClCompile Include="module\scalebias.cpp" />
+    <ClCompile Include="module\scalepoint.cpp" />
+    <ClCompile Include="module\select.cpp" />
+    <ClCompile Include="module\spheres.cpp" />
+    <ClCompile Include="module\terrace.cpp" />
+    <ClCompile Include="module\translatepoint.cpp" />
+    <ClCompile Include="module\turbulence.cpp" />
+    <ClCompile Include="module\voronoi.cpp" />
+    <ClCompile Include="noisegen.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
